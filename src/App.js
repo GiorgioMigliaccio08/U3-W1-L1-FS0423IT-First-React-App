@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import ButtomComponent from "./ButtomComponents";
+import ImageComponent from "./ImageComponents";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ButtomComponent buttomText="CLICCA QU" />
+      <ImageComponent
+        imageSrc="https://static.vecteezy.com/ti/vettori-gratis/p1/3623626-tramonto-lago-paesaggio-illustrazione-gratuito-vettoriale.jpg"
+        alt="Img"
+      />
     </div>
   );
 }
